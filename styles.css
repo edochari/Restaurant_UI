@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    
-}
+
 
 .header {
     /* min-height: 100vh; */
@@ -13,6 +9,7 @@
 .normal-text {
     color: rgba(250, 250, 250, 0.74);
     text-decoration: none;
+
 
 }
 
@@ -42,7 +39,7 @@
 
 .text-box {
     padding: 6rem 11rem;
-    font-size: 5rem;
+    font-size: 10vw;
     font-family: 'Caveat', cursive;
     font-weight: 600;
 }
@@ -50,7 +47,7 @@
 .child-text-box {
     padding: -1rem 11rem;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 6vw;
     font-family: 'Noto Sans TC', sans-serif;
     color: white;
 }
@@ -243,7 +240,8 @@ form button:active {
     color: #e4405f;
 }
 
-.categories-container{
+.container{
+    margin-bottom: 2 rem !important;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -282,12 +280,14 @@ form button:active {
 .categories-list{
     width:80%;
     margin-top:50px;
+    /* display:flex; */
 }
 .categories-list-box{
     list-style-type:none;
     width:100%;
     display:flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 .categories-list-item{
@@ -295,6 +295,7 @@ form button:active {
     width:120px;
     background-color:lightgrey;
     filter: brightness(108%);
+    border-radius:10%;
 
     /* border:2px solid black; */
 }
@@ -333,20 +334,123 @@ form button:active {
 
 }
 .normal-text-categories{
-    color: rgba(250, 250, 250, 0.74);
+    color: grey;
+    font-size: 1.1rem;
     text-align:center;
     margin:0;
 
 }
 
+.restaurants-list{
+    width:100%;
+    
+   
+    
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    list-style-type:none;
+}
+
+.restaurants-list-item{
+    height:14rem;
+    width:12rem;
+    border-radius:10%;
+    background-color:lightgrey;
+}
+
+.restaurants-image{
+    filter: contrast(100%);
+    position:relative;
+}
+
+.restaurants-list-rating{
+    height:1.5rem;
+    width:3.5rem;
+    position:absolute;
+    margin-left:1.5rem;
+    margin-top:1rem;
+    border-radius:10%;
+    
+    background-color: lightsalmon;
+    
+}
+
+.map{
+    height:40rem;
+    width:80%;
+    display:flex;
+    flex-direction: row;
+}
+
+.dishes-list{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    height:40rem;
+    list-style-type:none;
+}
+.dish-item{
+    height:10rem;
+    width:35%;
+    border:2px dashed brown;
+}
+
+/* .text-container{
+    background-color:coral;
+    height:20rem;
+    width:100%;
+} */
+.communication-container{
+    height:30rem;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.646);
+    
+
+}
+.communication-outer-container{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.communication-text{
+    height:15rem;
+    width:20rem;
+    border:2px solid black;
+    margin:1rem;
+    margin-left:4rem;
+
+}
+.communication-menu{
+    height:15rem;
+    width:20rem;
+    border:2px solid black;
+    margin:1rem;
+}
+
+.communication-input{
+    height:15rem;
+    width:20rem;
+    border:2px solid black;
+    margin:1rem;
+    margin-right:4rem;
+}
 @media screen and (max-width:1480px) {
     .hamburger-icon{
         display:none;
+    }
+    .normal-text{
+        font-size:1rem;
     }
 }
 @media screen and (max-width:1080px) {
     .hambuger-icon{
         display:none;
+    }
+    .categories-list-box{
+    
+    
+        height:30rem;
     }
     
 }
@@ -356,6 +460,11 @@ form button:active {
 }
 .hamburger-icon{
     display:inline;
+}
+.categories-list-box{
+    
+    
+    height:30rem;
 }
 
 }
