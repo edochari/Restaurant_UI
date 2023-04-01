@@ -1,9 +1,10 @@
 
 
 .header {
-    /* min-height: 100vh; */
+     min-height: 100vh; 
     width: 100%;
     background-color: coral;
+    /* height:100vh; */
 }
 
 .normal-text {
@@ -38,8 +39,9 @@
 }
 
 .text-box {
-    padding: 6rem 11rem;
-    font-size: 10vw;
+    margin-top:2rem;
+    margin-left:6rem;
+    font-size: 3vw;
     font-family: 'Caveat', cursive;
     font-weight: 600;
 }
@@ -47,7 +49,7 @@
 .child-text-box {
     padding: -1rem 11rem;
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 4vw;
     font-family: 'Noto Sans TC', sans-serif;
     color: white;
 }
@@ -59,12 +61,14 @@ nav {
 }
 
 .nav-links {
-    font-size: 1.5rem;
+    font-size: 1vw;
     font-family: sans-serif;
     flex: 1;
+    margin:0;
+    margin-left:3rem;
     text-align: left;
-    padding: 0rem 10rem;
-    align-items: center;
+    /* padding: 0rem 10rem; */
+    /* align-items: center; */
     display:block;
     
 }
@@ -72,7 +76,7 @@ nav {
 .nav-links ul li {
     list-style: none;
     display: inline-block;
-    padding: 1rem 1.8rem;
+    padding-left:2.5rem;
     position: relative;
 }
 
@@ -94,8 +98,9 @@ nav {
     cursor: pointer;
     display: inline-flex;
     font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1vw;
     font-weight: 600;
+    margin-left:4rem;
     justify-content: center;
     line-height: 1.25;
     margin: 0;
@@ -183,14 +188,16 @@ form button:active {
     transform: translateX(0.5px);
 }
 
-.media-icons {
-    padding: 2rem 11rem;
-    margin-bottom: 4rem;
-}
+/* .media-icons {
+    
+    
+} */
 
 .media-icons ul {
     position: absolute;
     display: flex;
+    margin-top:6rem;
+    margin-left:4rem;
 }
 
 .media-icons ul li {
@@ -261,19 +268,21 @@ form button:active {
 .small-heading-text{
     color:white;
     margin-top: 3px;
+    font-size: 1.3vw;
 }
 
 
 .heading{
    text-align: center; 
-   height:80px;
-   width:400px;
+   height:5rem;
+   width:30rem;
 }
 
 .heading-text{
     margin-top: 10px;
     font-size:xxx-large;
     font-weight:bold;
+    font-size:3.5vw;
     
 
 }
@@ -450,6 +459,8 @@ form i{
     list-style-type:none;
 }
 .dish-item{
+    display:flex;
+    flex-direction:row;
     height:10rem;
     width:45%;
     border:2px dashed brown;
@@ -579,6 +590,19 @@ form i{
     
     margin:1rem;
     margin-right:4rem;
+}
+
+.dishes-list{
+    flex-direction:column;
+
+    height:100rem;
+    
+}
+.dish-item{
+    
+    height:15rem;
+    width:100%;
+    border:2px dashed brown;
 }
 
 }
