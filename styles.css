@@ -29,7 +29,7 @@
 }
 
 .normal-text:active {
-    background-color: rgb(255, 205, 187);
+    background-color: rgb(250, 187, 255);
     border-radius: .4rem;
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
@@ -248,7 +248,8 @@ form button:active {
 }
 
 .container{
-    margin-bottom: 2 rem !important;
+    margin-top:4rem;
+    margin-bottom: 4 rem !important;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -258,8 +259,8 @@ form button:active {
 
 .small-heading{
     background-color: lightgreen;
-    height:25px;
-    width:120px;
+    height:2rem;
+    width:8rem;
     text-align: center;
     border-radius:10%;
     
@@ -275,7 +276,7 @@ form button:active {
 .heading{
    text-align: center; 
    height:5rem;
-   width:30rem;
+   width:100%;
 }
 
 .heading-text{
@@ -373,7 +374,8 @@ form button:active {
 }
 
 .restaurants-image{
-    filter: contrast(100%);
+    /* filter: contrast(100%); */
+    background-position: center;
     position:relative;
 }
 
@@ -391,8 +393,9 @@ form button:active {
 
 .map{
     height:40rem;
-    width:80%;
+    width:100%;
     display:flex;
+    /* flex-wrap:wrap; */
     flex-direction: row;
 }
 
@@ -522,7 +525,7 @@ form i{
     flex-direction:row;
     justify-content: flex-end;
 }
-@media screen and (max-width:1480px) {
+@media screen and (max-width:1920px) {
     .hamburger-icon{
         display:none;
     }
@@ -530,7 +533,7 @@ form i{
         font-size:1rem;
     }
 }
-@media screen and (max-width:1080px) {
+@media screen and (max-width:1025px) {
     .hambuger-icon{
         display:none;
     }
@@ -545,11 +548,33 @@ form i{
     
 }
 @media screen and (max-width:768px){
+    .map {
+        height: 30rem;
+        flex-direction: column;
+      }
+    
+      .map-search {
+        width: 100%;
+        height: 20rem;
+        margin-top: 2rem;
+      }
+    
+      .heading-map {
+        font-size: 3rem;
+        height: 7rem;
+      }
+    
+      .normal-text-map {
+        font-size: 1rem;
+      }
 .nav-links{
     display:none;
 }
 .hamburger-icon{
     display:inline;
+}
+.map{
+    height:60rem;
 }
 .communication-container{
     height:60rem;
@@ -604,6 +629,26 @@ form i{
     width:100%;
     border:2px dashed brown;
 }
+.restaurants-list {
+    justify-content: center;
+  }
+
+  .restaurants-list-item {
+    height: 12rem;
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+
+  .restaurants-image {
+    height: 8rem;
+  }
+
+  .restaurants-list-rating {
+    height: 1.2rem;
+    width: 2.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
 
 }
 
