@@ -634,50 +634,6 @@ form i {
         height: 60rem;
     }
 
-    .communication-container {
-        height: 60rem;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.646);
-
-
-    }
-
-    .communication-outer-container {
-        height: 35rem;
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .communication-text {
-        height: 10rem;
-        width: 10rem;
-
-        margin: 1rem;
-        margin-left: 4rem;
-
-    }
-
-    .communication-menu {
-        height: 15rem;
-        width: 20rem;
-
-        margin: 1rem;
-
-
-    }
-
-    .communication-input {
-        margin-left: 3rem;
-        height: 10rem;
-        width: 12rem;
-
-        margin: 1rem;
-        margin-right: 4rem;
-    }
-
     .dishes-list {
         flex-direction: column;
 
